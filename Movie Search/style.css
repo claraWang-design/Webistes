@@ -1,0 +1,79 @@
+body{
+	background-color: rgb(230,230,230);
+}
+.movie {
+	margin-bottom: 2%;
+}
+.image {
+	position: relative;
+	font-size: 11pt;
+	line-height: 1.1;
+	margin-bottom: 5px;
+}
+img {
+	width: 100%;
+}
+.caption {
+	margin: 0;
+	text-align: center;
+	bottom: 0;
+}
+.top{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	padding-top: 15%;
+	padding-left: 5%;
+	padding-right: 5%;
+	color: white;
+	text-align: center;
+	background-color: rgba(25,25,25,0.8);
+	opacity: 0;
+}
+
+.image:hover .top  {
+	opacity: 1;
+}
+#page{
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+#header{
+	padding-top: 3%;
+	padding-bottom: 3%;
+	padding-left: 10%;
+	padding-right: 10%;
+	margin-bottom: 2%;
+	background-image: url("images/cinema.jpg");
+	background-size: cover;
+}
+#search {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#search input {
+	margin-right: 10px;
+}
+.overview{
+	font-family: 'Shippori Mincho', serif;
+}
+#show {
+	color: rgb(200,200,200);
+}
+h1{
+	color: white;
+	font-family: didot;
+}
+@media(min-width: 768px){
+	.top{
+		padding-top: 10%;
+	}
+}
+@media(min-width: 1200px){
+	.top{
+		padding-top: 20%;
+	}
+}

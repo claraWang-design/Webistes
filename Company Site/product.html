@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rilakkuma</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com"> 
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Concert+One&family=Fredoka+One&family=Varela+Round&display=swap" rel="stylesheet">
+
+	<style>
+		@font-face {
+			font-family: kuma;
+			src: url(fonts/kuma.ttf);
+		}
+		@font-face {
+			font-family: kuma2;
+			src: url(fonts/kuma2.ttf);
+		}
+
+		#store {
+			background-color: #ffe100;
+			color: #583c32;
+			font-family: kuma;
+		}
+		#store h2 {
+			text-align: center;
+			font-size: 24pt;
+			font-family: kuma;
+			margin: 0;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+
+		#product p{
+			font-family: 'Fredoka One', cursive;
+			font-size: 25pt;
+			line-height: 1.3;
+			margin-top: 0px;
+			margin-bottom: 10px;
+			margin-left: 5%;
+			margin-right: 5%;
+			color: #583c32;
+		}
+		#main-image{
+			width: 100%;
+			margin-bottom: 30px;
+		}
+		#promo {
+			width: 80%;
+			background-color: #ffecf1;
+			border: 3px solid #fdbfd0;
+			margin-left: auto;
+			margin-right: auto;
+			font-family: 'Comfortaa', cursive;
+			font-weight: 700;
+			font-size: 12pt;
+			padding-left: 1%;
+			padding-right: 1%;
+			border-radius: 20px;
+			line-height: 1.3;
+		}
+		#promo p {
+			text-align: center;
+			color: #ff5a86;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		.column #price {
+			font-family: 'Fredoka One', cursive;
+			font-size: 25pt;
+		}
+		#price {
+			margin-top: 20px;
+		}
+
+		.column {
+			float:left;
+			width: 92%;
+			margin-left: 4%;
+			margin-right: 4%;
+		}
+		#product-info p {
+			font-family: 'Comfortaa', cursive;
+			font-size: 15pt;
+			margin: 0;
+		}
+		#product2 p {
+			font-family: 'Fredoka One', cursive;
+			font-size: 25pt;
+			line-height: 1.3;
+			color: #583c32;
+			display: none;
+			padding-top: 20px;
+			padding-bottom: 5px;
+		}
+		#product-info #price{
+			padding-bottom: 10px;
+			font-size: 25pt;
+			color: #583c32;
+		}
+		#review-image {
+			width: 125px;
+		}
+		.row {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		.row:after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+		#related-products:after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+		#related-products{
+			width: 100%;
+		}
+		#related-products .item{
+			width: 60%;
+			margin-left: 20%;
+			margin-right: 20%;
+			margin-top: 20px;
+			background-color: white;
+			border: 4px solid #c78311;
+			padding: 20px;
+			border-radius: 15%;
+			box-sizing: border-box;
+			float: left;
+		}
+		#related-products .item:hover .hover-text{
+			opacity: 1;
+		}
+		#related-products .item:hover{
+				background-color: rgba( 241, 158, 180, 0.5);
+		}
+		#related-products .item:hover img{
+				opacity: 0.6;
+		}
+		.item img{
+			width: 100%;
+		}
+		ul{
+			font-family: 'Comfortaa', cursive;
+			line-height: 1.5;
+		}
+		body{
+			margin: 0;
+		}
+		.column p {
+			margin-bottom: 0;
+			font-family: 'Comfortaa', cursive;
+		}
+		#related-products{
+			padding-top: 20px;
+			background-color: #fef0cb;
+			width: 100%
+		}
+		#related-products #title {
+			font-family: 'Fredoka One', cursive;
+			font-size: 25pt;
+			margin-bottom: 10px;
+			margin-top: 10px;
+			color: #583c32;
+			padding-left: 5%;
+		}
+		#blank {
+			padding: 30px;
+		}
+
+		#related-products .item {
+			position: relative;
+		}
+
+		#related-products .item .hover-text {
+			text-align: center;
+			background-color: white;
+			color: #ff5a86;
+			font-family: 'Fredoka One', cursive;
+			font-size: 17pt;
+			width: 100%;
+			position: absolute;
+			top: 50%;
+			left: 0; 
+			opacity: 0;
+		}
+		#related-products .item .hover-text p {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		#related-products .item:hover p{
+			opacity: 1;
+		}
+
+
+
+
+
+		@media (min-width: 768px) {
+			.column{
+				float: left;
+				width: 42%;
+			}
+			#product{
+				display: none;
+			}
+			#product2 p {
+				display: inline;
+			}
+			.row {
+				padding-top: 30px;
+				padding-bottom: 30px;
+			}
+			.column #price{
+				padding-top: 15px;
+				padding-bottom: 15px;
+				margin: 0;
+				color: #c78311;
+			}
+			#promo p{
+				font-size: 14pt;
+			}
+			#pictures{
+				margin-left: 10%;
+				margin-right: 10%;
+			}
+			#related-products .item{
+				width: 42%;
+				margin: 4%;
+			}
+			.item img {
+				width: 100%;
+			}
+			.column p {
+				margin-top: 0;
+			}
+		}
+		@media (min-width: 992px) {
+			#pictures{
+				margin-left: 5%;
+				margin-right: 5%;
+			}
+			#related-products .item{
+				width: 21%;
+				margin: 2%;
+			}
+			.item img{
+				width: 100%;
+			}
+			.row {
+				padding-top: 40px;
+				padding-bottom: 40px;
+				max-width: 1000px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	</style>
+</head>
+<body>
+	<!-- Store Name -->
+	<div id="store">
+		<h2>Rilakkuma Online Shop</h2>
+	</div>
+
+	<div id="page">
+		<div class="row">
+			<!-- Product Name -->
+			<div id="product">
+				<p>Rilakkuma Panda Sleeping Plush Doll<p>
+			</div>
+
+			<!-- Image and Promo code -->
+			<div class="column">
+				<img id="main-image" src="images/big.jpg" alt="panda rilakkuma"/>
+
+				<div id="promo">
+					<p>Use promo code RELAXBEAR to get 30% OFF on all products!</p>
+				</div>
+			</div>
+
+			<!-- Product Imformation -->
+			<div class="column">
+				<div id="product2">
+					<p>Rilakkuma Panda Sleeping Plush Doll<p>
+				</div>
+				<p id="price">Price: $24.99</p>
+				<p> <img id="review-image" src="images/stars.png" alt="ratings" /> 520,718 Reviews</p>
+				<ul>
+					<li>Authorized San-X Product</li>
+					<li>Soft filled plush doll</li>
+					<li>Perfect for cuddling or displaying on a shelf or couch</li>
+					<li>High quality fabric, stuffing and stitching</li>
+					<li>Be sure to get all characters to complete your collection</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Related Products -->
+		<div id="related-products">
+			<p id="title">Related Products</p>
+
+			<div id="pictures">
+				<div class="item">
+						<img src="images/wedding.png" alt="wedding bear"/>
+						<div class="hover-text"><p>Weddings</p></div>
+				</div>
+
+				<div class="item">
+					<img src="images/keyring.png" alt="bear keyrings"/>
+					<div class="hover-text"><p>Keyrings</p></div>
+				</div>
+
+				<div class="item">
+					<img src="images/christmas.png" alt="christmas bear"/>
+					<div class="hover-text"><p>Christmas</p></div>
+				</div>
+
+				<div class="item">
+					<img src="images/flower.png" alt="flowers with bears"/>
+					<div class="hover-text"><p>Flowers</p></div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+	<div id="blank" style="background-color: #fef0cb;"></div>
+
+</body>
+</html>

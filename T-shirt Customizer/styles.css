@@ -1,0 +1,106 @@
+@font-face{
+	font-family: cute;
+	src: url("fonts/1.ttf");
+}
+body {
+	background-color: #FFDEE5;
+}
+img {
+	width: 100%;
+}
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+datalist {
+	display: flex;
+	justify-content: space-between;
+	font-size: 13px;
+}
+h1 {
+	font-family: cute;
+	font-size: 40pt;
+	color: white;
+}
+h2 {
+	font-family: cute;
+	font-size: 30pt;
+	color: #FF7490;
+}
+h4 {
+	font-family: cute;
+	font-size: 25pt;
+}
+.header {
+	background-image: url("images/pink.jpg");
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+.section {
+	background-color: white;
+	padding: 10px;
+}
+.tshirt {
+	padding-right: 30px;
+	position: relative;
+}
+.tshirt #tshirt-preview {
+	position: absolute;
+	top: 25%;
+	left: 30%;
+	width: 37%;
+	font-size: 24px;
+}
+.tshirt-colors  {
+	display: flex;
+}
+.tshirt-colors .tshirt-color {
+	width: 40px;
+	height: 25px;
+	border-radius: 10px;
+	margin-right: 10px;
+}
+.tshirt-colors .tshirt-color:nth-child(1) {
+	background-color: black;
+}
+.tshirt-colors .tshirt-color:nth-child(2) {
+	background-color: blue;
+}
+.tshirt-colors .tshirt-color:nth-child(3) {
+	background-color: green;
+}
+.tshirt-colors .tshirt-color:nth-child(4) {
+	background-color: red;
+}
+.tshirt-colors .tshirt-color.selected {
+	border: 3px solid #aaa;
+}
+.error-message {
+	color: red;
+	margin-top: 5px;
+}
+.cart {
+	background-color: #FF7490;
+	border: 3px solid #FFCED8;
+	border-radius: 20px;
+	width: 100%;
+	padding: 10px;
+	color: white;
+}
+.cart .cart-pricing {
+	display: flex;
+	justify-content: space-between;
+}
+.hide {
+	display: none;
+}
+@media( max-width: 767px ){
+	.header{
+		background-size: auto;
+	}
+
+}

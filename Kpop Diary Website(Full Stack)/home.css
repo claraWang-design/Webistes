@@ -1,0 +1,111 @@
+.bar{
+	height: 100px;
+}
+.bar-text{
+	margin: 0 10px;
+	font-size: 17pt;
+}
+.text-margin{
+	margin: 0 20px;
+}
+.up-text {
+	font-size: 30pt;
+	color: white;
+	padding-top: 100px;
+	font-family: 'Roboto';
+	font-weight: 700;
+	animation: appear 4s 1;
+}
+
+body{
+	background-size: cover;
+	font-family: 'Roboto';
+}
+
+#homeback{
+	background-image: url("images/home/456.jpg");
+}
+#box {
+	position: relative;
+}
+#ball{
+position: absolute;
+  background-image: url("images/home/kuma.png");
+  background-size: cover;
+  background-position: center;
+  width: 100px;
+  height: 100px;
+  animation: bounce 1s linear infinite;
+  animation-direction: alternate;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+}
+
+@keyframes bounce
+{
+  0% {
+    transform: translate3d(25px,0,0);
+    width: 100px;
+    height: 100px;
+  }
+  10%{
+    transform: translate3d(25px,5px,0);
+    width: 100px;
+    height: 100px;
+  }
+  20%{
+    transform: translate3d(25px,20px,0);
+    width: 100px;
+    height: 100px;
+  }
+  30%{
+    transform: translate3d(25px,45px,0);
+    width: 100px;
+    height: 100px;
+  }
+  40%{
+    transform: translate3d(25px,80px,0);
+    width: 100px;
+    height: 100px;
+  }
+  50%{
+    transform: translate3d(25px,125px,0);
+    width: 100px;
+    height: 100px;
+  }
+  60%{
+    transform: translate3d(25px,180px,0);
+    width: 100px;
+    height: 100px;
+  }
+  70%{
+    transform: translate3d(25px,245px,0);
+    width: 100px;
+    height: 100px;
+  }
+  80%{
+    transform: translate3d(25px,320px,0);
+    width: 100px;
+    height: 100px;
+  }
+  90%{
+    transform: translate3d(42px,405px,0);
+    width: 66px;
+    height: 150px;
+  }
+  100%{
+    transform: translate3d(0px,500px,0);
+    width: 150px;
+    height: 66px;
+  }
+}
+@keyframes appear{
+	from {
+		opacity:0;
+  }
+  to { 
+    opacity:1;
+  }
+
+}

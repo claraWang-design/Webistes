@@ -1,0 +1,24 @@
+.bar{
+	height: 100px;
+}
+.bar-text{
+	margin: 0 10px;
+	font-size: 17pt;
+}
+.text-margin{
+	margin: 0 20px;
+}
+#profpic{
+	border-radius: 50%;
+	margin: 30px;
+}
+.middle{
+	padding: 5%;
+	background-color: #f5f5f5;
+}
+.diary{
+	height: 40px;
+}
+.lib{
+	width: 100%;
+}

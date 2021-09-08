@@ -1,0 +1,99 @@
+.navbar-custom {
+    background-color: #204962;
+    color: white;
+}
+.top {
+	font-family: 'Josefin Slab';
+	font-weight: 600;
+}
+#header {
+	background-image: url("images/header1.png");
+	background-size: cover;
+	background-position: center;
+	padding: 50px 20px 30px 20px;
+	text-align: center;
+}
+#header h1{
+	font-family: 'Righteous';
+}
+#header h4{
+	padding-top: 60px;
+	font-family: 'Josefin Slab';
+}
+.nav-head {
+	font-family: 'Righteous';
+}
+.feature-img img{
+	width: 100%;
+}
+.feature{
+	padding: 35px 25px 0px 25px;
+}
+.feature-img{
+	padding: 0px 25px 35px 25px;
+	border-bottom: 1px solid #afbabf;
+
+}
+.feature p{
+	font-family: didot;
+	font-size: 13pt;
+}
+.feature h2{
+	font-family: 'Secular One';
+}
+#footnote {
+	padding: 10px 20px;
+	color: gray;
+}
+#footer {
+	border-top: 1px solid #afbabf;
+	padding: 10px 20px;
+	color: gray;
+}
+.box {
+	text-align: center;
+	padding: 30px;
+}
+.box p{
+	font-family: didot;
+}
+.box h5 {
+	font-style: italic;
+	font-family: 'Josefin Slab';
+}
+.box h2 {
+	font-family: 'Secular One';
+}
+.box img {
+	width: 50%;
+	padding-bottom: 15px;
+}
+@media (min-width: 768px){
+	#header {
+		padding: 50px 20px 50px 20px;
+	}
+	#header h1{
+		padding-bottom: 40px;
+	}
+	.feature {
+		padding: 50px 15px;
+		border-bottom: 1px solid gray;
+	}
+	.feature-img {
+		padding: 70px 15px;
+	}
+	.box {
+		padding: 60px 30px;
+	}
+
+}
+@media (min-width: 992px){
+	#header {
+		padding: 70px 20px 50px 20px;
+		max-width: 1440px;
+		margin:0 auto;
+	}
+	#header h1{
+		padding-bottom: 140px;
+	}
+}

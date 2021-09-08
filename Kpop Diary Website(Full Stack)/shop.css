@@ -1,0 +1,52 @@
+.bar{
+	height: 100px;
+}
+.bar-text{
+	margin: 0 10px;
+	font-size: 17pt;
+}
+.bar-text{
+	font-size: 17pt;
+}
+.text-margin{
+	margin: 0 20px;
+}
+.row1{
+	background-image: url('images/shop/blue.jpg');
+	height: 350px;
+	border-radius: 25px;
+	margin: 2% 0;
+}
+.column1{
+	background-color: #e8e8e8;
+	padding: 40px;
+	border-radius: 25px;
+}
+.column2{
+}
+.row2{
+	height: 700px;
+}
+.items{
+	height: 60%;
+	padding: 5%;
+	border-radius: 25px;
+}
+.top-text{
+	padding-top: 9%;
+	color: #383838;
+}
+.top-text h1{
+	font-size: 35pt;
+}
+.midrow{
+	padding: 20px 0;
+}
+.shadow{
+	margin-bottom: 20px;
+	box-shadow: 10px 10px 8px 10px #888888;
+}
+
+#form{
+	padding-left: 5%;
+}
